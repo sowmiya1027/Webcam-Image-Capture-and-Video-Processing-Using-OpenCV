@@ -41,7 +41,7 @@ Rotate the frame using `cv2.rotate()` and display the output.
 ## Program
 
 ## i) Write the Frame as a JPG File
-
+```
 import cv2
 import matplotlib.pyplot as plt
 from IPython.display import clear_output
@@ -59,10 +59,10 @@ plt.imshow(captured_image[:,:,::-1])
 plt.title('Captured Frame')
 plt.axis('off')
 plt.show()
-
+```
 
 ## ii) Display the Video
-
+```
 cap = cv2.VideoCapture(0)
 
 for i in range(50):
@@ -77,10 +77,10 @@ for i in range(50):
     time.sleep(0.05)
 
 cap.release()
-
+```
 
 ## iii) Display the Video by Resizing the Frame
-
+```
 cap = cv2.VideoCapture(0)
 
 for i in range(50):
@@ -96,10 +96,10 @@ for i in range(50):
     time.sleep(0.05)
 
 cap.release()
-
+```
 
 ## iv) Rotate and Display the Video
-
+```
 
 cap = cv2.VideoCapture(0)
 
@@ -116,7 +116,7 @@ for i in range(50):
     time.sleep(0.05)
 
 cap.release()
-
+```
 
 ## Output
 
